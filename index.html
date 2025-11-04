@@ -3,28 +3,163 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>เว็บมหาวิทยาลัยสมุทรสาคร</title>
+  <title>หน้าแรกห้องสมุด</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<header>
-  <h1>วิทยาลัยสมุทรสาคร</h1>
-  <nav>
-    <ul>
-      <li><a href="#">หน้าแรก</a></li>
-      <li><a href="#">ข่าวประชาสัมพันธ์</a></li>
-      <li><a href="#">ติดต่อเรา</a></li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <section>
-    <h2>ยินดีต้อนรับ</h2>
-    <p>เว็บไซต์นี้จัดทำขึ้นเพื่อการเรียนรู้</p>
-  </section>
-</main>
-<footer>
-  <p>© 2025 วิทยาลัยสมุทรสาคร</p>
-</footer>
+
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/>
+        </svg>
+        <h1 class="text-2xl font-bold">ห้องสมุดวิทยาลัย</h1>
+      </div>
+      <nav>
+        <ul class="flex gap-6">
+          <li><a href="index.html" class="hover:text-blue-200 transition font-medium border-b-2 border-white pb-1">หน้าแรก</a></li>
+          <li><a href="#" class="hover:text-blue-200 transition font-medium">หนังสือ</a></li>
+          <li><a href="login.html" class="hover:text-blue-200 transition font-medium">เข้าสู่ระบบ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4">
+    <!-- Hero Section -->
+    <section class="my-12 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl shadow-md p-12 text-center">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">ยินดีต้อนรับสู่ห้องสมุดดิจิทัล</h2>
+      <p class="text-xl text-gray-600 mb-6">เว็บไซต์นี้จัดทำขึ้นเพื่อการเรียนรู้และพัฒนาทักษะของนักศึกษา</p>
+      <div class="flex gap-4 justify-center">
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold shadow-md transition transform hover:scale-105">
+          เริ่มค้นหาหนังสือ
+        </button>
+        <button class="bg-white hover:bg-gray-50 text-blue-600 px-8 py-3 rounded-lg font-semibold shadow-md border-2 border-blue-600 transition">
+          เกี่ยวกับเรา
+        </button>
+      </div>
+    </section>
+
+    <!-- Featured Books Section -->
+    <section class="my-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8">หนังสือแนะนำ</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Book Card 1 -->
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 overflow-hidden">
+          <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+            <svg class="w-20 h-20 text-white opacity-80" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">การเขียนโปรแกรมเบื้องต้น</h3>
+            <p class="text-gray-600 mb-4">เรียนรู้พื้นฐานการเขียนโปรแกรมด้วยภาษา Python และ JavaScript สำหรับผู้เริ่มต้น</p>
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-gray-500">📚 หมวด: เทคโนโลยี</span>
+              <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-medium transition">
+                อ่านเพิ่มเติม
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Book Card 2 -->
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 overflow-hidden">
+          <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+            <svg class="w-20 h-20 text-white opacity-80" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">ธุรกิจและการตลาดยุคใหม่</h3>
+            <p class="text-gray-600 mb-4">กลยุทธ์การตลาดดิจิทัลและการสร้างแบรนด์ในโลกออนไลน์สำหรับนักธุรกิจรุ่นใหม่</p>
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-gray-500">📚 หมวด: ธุรกิจ</span>
+              <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-medium transition">
+                อ่านเพิ่มเติม
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Book Card 3 -->
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 overflow-hidden">
+          <div class="h-48 bg-gradient-to-br from-pink-400 to-pink-600 flex items-center justify-center">
+            <svg class="w-20 h-20 text-white opacity-80" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">จิตวิทยาและการพัฒนาตนเอง</h3>
+            <p class="text-gray-600 mb-4">เข้าใจตัวเองและผู้อื่นให้ดีขึ้น พร้อมเทคนิคการพัฒนาศักยภาพและการใช้ชีวิตอย่างมีความสุข</p>
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-gray-500">📚 หมวด: จิตวิทยา</span>
+              <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-medium transition">
+                อ่านเพิ่มเติม
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="my-12 bg-white rounded-2xl shadow-md p-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <p class="text-4xl font-bold text-blue-600 mb-2">2,500+</p>
+          <p class="text-gray-600">หนังสือ</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold text-green-600 mb-2">850+</p>
+          <p class="text-gray-600">นักศึกษา</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold text-purple-600 mb-2">120+</p>
+          <p class="text-gray-600">หมวดหมู่</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold text-pink-600 mb-2">24/7</p>
+          <p class="text-gray-600">เปิดบริการ</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white mt-16">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-lg font-bold mb-4">ห้องสมุดวิทยาลัย</h3>
+          <p class="text-gray-400">แหล่งความรู้และการเรียนรู้สำหรับนักศึกษา</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">ลิงก์ด่วน</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white transition">หน้าแรก</a></li>
+            <li><a href="#" class="hover:text-white transition">หนังสือ</a></li>
+            <li><a href="#" class="hover:text-white transition">เกี่ยวกับเรา</a></li>
+            <li><a href="#" class="hover:text-white transition">ติดต่อเรา</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">ติดต่อเรา</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li>📧 library@college.ac.th</li>
+            <li>📞 02-123-4567</li>
+            <li>📍 กรุงเทพมหานคร ประเทศไทย</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+        <p>© 2025 ห้องสมุดวิทยาลัย | Developed by Nitikorn</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
-<link rel="stylesheet" href="style.css">
